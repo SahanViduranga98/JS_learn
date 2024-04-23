@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart Review</title>
+        <style> 
+            .show{
+                background-color: red;
+                color: white;
+                border: 0ric;
+                height: 36px;
+                width: 100px;
+                border-radius: none;
+                border-style: solid;
+                cursor:pointer;
+            }
+            .add{
+                background-color: red;
+                color: white;
+                border: 0ric;
+                height: 36px;
+                width: 100px;
+                border-radius: none;
+                border-style: solid;
+                cursor:pointer;
+            }
+            .add2{
+                background-color: red;
+                color: white;
+                border: 0ric;
+                height: 36px;
+                width: 100px;
+                border-radius: none;
+                border-style: solid;
+                cursor:pointer;
+            }
+            .add3{
+                background-color: red;
+            color: white;
+            border: 0ric;
+            height: 36px;
+                width: 100px;
+                border-radius: none;
+                border-style: solid;
+                cursor:pointer;
+            }
+            .reset{
+                background-color: red;
+                color: white;
+                border: 0ric;
+                height: 36px;
+                width: 120px;
+                border-radius: none;
+                border-style: solid;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+       <button  class="show" onClick="
+            console.log(`Cart Quantity:${cartQuantity}`);
+       ">Show Quantity</button>
+       <button  class="add" onClick="
+            cartQuantity=cartQuantity+1;
+            console.log(`Cart Quantity:${cartQuantity}`);
+        ">Add to Cart</button>
+       <button  class="add2" onClick="
+            cartQuantity=cartQuantity+2;
+            console.log(`Cart Quantity:${cartQuantity}`);
+        ">+2</button>
+       <button  class="add3" onClick="
+            cartQuantity=cartQuantity+3;
+            console.log(`Cart Quantity:${cartQuantity}`);
+        ">+3</button>
+       <button  class="reset" onClick="
+            cartQuantity=0;
+            console.log(`Cart Quantity:${cartQuantity}`);
+        ">Reset Quantity</button>
+        <script>
+           let cartQuantity=0;//common method
+           const variable=0;//cannot change value
+           var variable2=1;//older method
+        </script>
+    </body>
+</html>
